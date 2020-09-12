@@ -3,18 +3,22 @@
 // Create two objects, `frieda`, `francis` with the fields :
 //   `age` (an integer) and `name`, (obviously a string)
 frieda = {
-    age = 22;
-    name = "Frieda";
+    age = 22,
+    name = "Frieda",
 };
 francis = {
-    age = 17;
-    name = "Francis";
+    age = 17,
+    name = "Francis",
 };
+const canFrancisDrinkAlcohol = francis.age > 18;
+const canFriedaDrinkAlcohol = frieda.age > 18;
+
 
 // Create two variables `canFriedaDrinkAlcohol` and `canFrancisDrinkAlcohol` to answer,
 // respectively, to the question "Can he / she drink alcohol?".
 // Think about the Primitive Data Type that is best suited for the answer.
 // Hint: Think about the number of options
+
 
 // These variables should stay correct if we modify the ages of the objects
 // `francis` and `frieda` in the declaration.
