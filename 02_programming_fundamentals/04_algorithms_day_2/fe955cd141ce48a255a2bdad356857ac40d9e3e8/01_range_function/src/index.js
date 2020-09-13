@@ -1,22 +1,24 @@
 function range (num1, num2) {
-  const array = [num1];
-  if (num1 < num2) {
-    while(num1 < num2){
-      array.push(num1 + 1);
-      num1++;
+  const array = [];
+  let i = num1;
+  if (num1 <= num2) {
+    while(i <= num2){
+      array.push(i);
+      i++;
     }
-  } else if(num1 > num2){
-    while(num1 > num2){
-      array.push(num1 - 1);
-      num1--;
-
-    }
-  }
-  return array;
+  } else if(num1 >= num2){
+    while(i >= num2){
+      array.push(i);
+      i--;
+    } 
+  }  return array;
 }
+  
 
 const ascArray = range(1,4);
 const descArray = range(4,1);
+console.log(ascArray);
+console.log(descArray);
 
 
 
