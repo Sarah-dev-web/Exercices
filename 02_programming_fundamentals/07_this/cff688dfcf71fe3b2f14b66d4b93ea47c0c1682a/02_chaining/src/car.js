@@ -2,29 +2,30 @@ const car = {
   // Complete here
   speed : 0,
   distance : 0,
-  temps : 0,
+  minutes : 0,
   
   start : function () {
     this.speed = 0;
     this.distance = 0;
-    this.temps = 0;
-    Math.log(this.speed/60 * this.minutes);
-    
+    this.minutes = 0;
     return this;
   },
   changeSpeed : function(speed) {
-    this.changeSpeed = speed;
+    this.speed = speed;
     return this;
   },
   drive: function (minutes){
-    this.drive = minutes;
+    this.minutes = minutes;
+    this.distance = this.distance + ((this.minutes/60) * this.speed);
     return this;
   },
   showDistance : function() {
+    console.log(`${this.distance} Km`);
     return this;
-  
+    
   },
 };
+
 
 
 

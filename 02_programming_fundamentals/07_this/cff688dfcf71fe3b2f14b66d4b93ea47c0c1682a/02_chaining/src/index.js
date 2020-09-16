@@ -1,4 +1,3 @@
 const car = require("./car");
 
-//car.start().changeSpeed(130).drive(42).showDistance();
-car.start().changeSpeed(130);
+car.start().changeSpeed(130).drive(42).showDistance();
