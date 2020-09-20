@@ -3,3 +3,5 @@
 // ```
 // **********
 // ```
+let starString = "**********";
+console.log(starString);

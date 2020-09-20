@@ -8,7 +8,7 @@ const planet = {
 };
 
 function canHabitateLife(star, planet) {
-  if((star.spectralClass = "M" || "K") && (planet.mass > 0.32) && (0.5<planet.radius< 2.5) && (planet.rotationStability === true)){
+  if((star.spectralClass = "M" || "K") && (planet.mass > 0.32) && (planet.radius<= 0.5 && planet.radius>= 2.5) && (planet.rotationStability === true)&&(planet.habitalZone === true)&&(planet.mass < 0.5 && planet.radius > 1 === true)){
     return true;
 
   }else{
