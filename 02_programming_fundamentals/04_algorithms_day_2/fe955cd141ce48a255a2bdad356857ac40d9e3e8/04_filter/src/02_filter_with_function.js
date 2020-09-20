@@ -1,5 +1,12 @@
 function filter(array, fn) {
-  // Your code here
+  const returnedArray = [];
+
+  for (let index = 0; index < array.length; index++) {
+    if (fn(array[index])) {
+      returnedArray.push(array[index]);
+    }
+  }
+  return returnedArray;
 }
 
 // do not remove this line, it is for tests
