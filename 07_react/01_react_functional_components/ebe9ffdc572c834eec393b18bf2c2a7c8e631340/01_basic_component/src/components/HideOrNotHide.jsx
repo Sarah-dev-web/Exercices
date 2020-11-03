@@ -1,13 +1,12 @@
 import React from "react";
 
 export const HideOrNotHide = () => {
-  const [text, setText] = React.useState(0);
+  const [hidden, setHidden] = React.useState(true);
   return (
     <div>
-    <p> click </p>
-      <button onClick={() => setText(text)}> Hide Content</button>)
+      <button 
+      onClick={() => {setHidden(!hidden)}}>{hidden ?  "Hide Content" : "Reveal Content" }</button>
+      {hidden ? <p> click </p> : null}
     </div>
-   
   );
-  // Code here
 };
